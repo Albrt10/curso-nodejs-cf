@@ -1,0 +1,7 @@
+extends ./layoutSis.jade
+block contenido
+	div.img-container
+		h1= imagen.title
+		img.main-img(src="../../estatico/imagenes/#{imagen._id}.#{imagen.extension}")
+		if(typeof imagen.creator != "undefined")
+			p Por #{imagen.creator.email}

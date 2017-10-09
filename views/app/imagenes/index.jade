@@ -1,0 +1,14 @@
+extends ./layoutSis.jade
+block contenido
+	div.container-fluid
+		h1 Mis Imágenes
+		for imagen in imagenes
+			.white.border.tr.large-padding
+				.row
+					.col-md-10
+						a.right-space(href="/sis/imagenes/#{imagen._id}")
+							h3= imagen.title
+					.col-md-2
+						a.right-space(href="/sis/imagenes/#{imagen._id}/edit") Editar
+						form.link(action="/sis/imagenes/#{imagen._id}?_method=DELETE", method="POST")
+							input(type="submit" value="Eliminar")

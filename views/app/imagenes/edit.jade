@@ -1,0 +1,13 @@
+extends ./layoutSis.jade
+block contenido
+	div.col-md-6.remove-float.center-block.big-top-space
+		h1 Actualizar imagen
+		form(action="/sis/imagenes/#{imagen._id}?_method=PUT" method="POST")
+			input(type="hidden", value="PUT" name="_method")
+			div(class="form-group")
+				label(for="title") Titulo
+				input(type="text", name="title", placeholder="titulo de la imagen...", id="title", class="form-control", value="#{imagen.title}")
+			
+			div.row.top-space
+				div.col-xs-12.col-sm-6
+					input(type="submit", value="Actualizar", class="btn btn-info")

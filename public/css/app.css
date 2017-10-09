@@ -1,0 +1,87 @@
+  	
+/* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 450px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;} 
+    }
+    .form-login{
+    	color:red;
+    }
+    #qp{
+    	width: 250px;
+    	color:#DC143C;
+    }
+    .remove-float{
+      float: none;
+    }
+    .top-space{
+      margin-top: 1.5em;
+    }
+    .big-top-space{
+      margin-top: 100px;
+    }
+    .right-space{
+      margin-right: 1em;
+    }
+    .white{
+      background-color: white;
+    }
+    .border{
+      border: solid 1px #eee;
+    }
+    .tr:nth-of-type(odd){
+      background-color: #eee;
+    }
+    form.link{
+      display: inline-block;
+    }
+
+    form.link input[type="submit"]{
+      background-color: transparent;
+      border: none;
+      color: rgb(200,50,50);
+    }
+    .img-container{
+      width: 700;
+      max-width: 100%;
+      margin: 0 auto;
+    }
+    .img-container h1, .img-container h2{
+      padding: 15px;
+      border-bottom: 1px solid #222;
+    }
+
+    .img-container p{
+      text-align: right;
+      font-size: 1.2em;
+      margin-top: 1em;
+    }
+    img{
+      max-width: 60%;
+    }
